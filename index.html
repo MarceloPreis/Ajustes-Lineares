@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes</title>
+
+    <script src="Ajuste.js"></script>
+    <script src="AjusteLienar.js"></script>
+    <script src="AjusteExponencial.js"></script>
+    <script src="AjustePolinomial.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <label for="ajsute"> Tipos de Ajuste</label>
+    <select id="ajuste" onchange="polinomialMode()">
+        <option value="linear">Linear</option>
+        <option value="exponencial">Exponencial</option>
+        <option value="polinomial">Polinomial</option>
+    </select>
+
+    <br><br>
+    <div id="section-qtd"></div>
+    
+    <br>
+    <div id="section-x">
+        <input type="text" id="x0" placeholder="Valores para x0">
+    </div>
+
+    <br>
+    <input type="text" id="y" placeholder="Valores para y">
+
+    <br><br>
+    <button onclick="executar()"> Executar</button>
+
+    <br><hr><br>
+    <div id="resultados"></div>
+
+</body>
+
+</html>
